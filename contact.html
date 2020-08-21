@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Home</title>
 </head>
 
@@ -15,7 +16,7 @@
     <header>
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Quantum Leap</a>
+                <a class="navbar-brand" href="index.html">Quantum Leap</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,32 +26,39 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://orders.9fold.me/quantum-leap.html" target="_blank">Order</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid hero">
             <div class="container-fluid">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                <h1 class="display-4">Quantum Leap</h1>
             </div>
         </div>
     </header>
     <!-- End HEADER -->
 
     <!-- Begin MAIN -->
-    <main class="container-fluid">
+    <main class="container-fluid row">
         <div class="col-md-6 align-content-center">
-            <form class="h-100">
-                <input type="text" name="firstName" placeholder="Enter your first name." required>
-                <input type="text" name="lastName" placeholder="Enter your last name." required>
-                <input type="email" placeholder="Enter your email." required>
-                <textarea name="message"></textarea>
+            <form class="form-group h-100">
+                <label for="usr">First name:</label>
+                <input type="text" name="firstName" class="form-control" placeholder="Enter your first name." required>
+                <label for="usr">Last name:</label>
+                <input type="text" name="lastName" class="form-control" placeholder="Enter your last name." required>
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" placeholder="Enter your email." required>
+                <label for="comment">Message:</label>
+                <textarea name="message" class="form-control"></textarea>
+                <input type="submit" name="submit" class="btn btn-default" value="Get in touch!">
             </form>
         </div>
         <div class="col-md-6">
@@ -61,12 +69,29 @@
     <!-- End MAIN-->
 
     <!-- Begin FOOTER -->
-    <footer>
-        <div class="jumbotron jumbotron-fluid mb-0">
-            <div class="container-fluid row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
+    <footer class="jumbotron jumbotron-fluid mr-0 mb-0 pr-0">
+        <div class="container-fluid row justify-content-between p-0 m-0 mr-0 pr-0">
+            <div class="col-md-3">
+                <h3>Join our newsletter</h3>
+                <form>
+                    <input type="email" name="newsletter" placeholder="Enter your email" required>
+                    <input type="submit" name="submit">
+                </form>
+            </div>
+            <div class="col-md-3">
+                <h3>Our Reviews</h3>
+                <a href="                https://www.yelp.com/biz/quantum-leap-new-york
+                "><i class="fab fa-yelp"></i></a>
+
+
+            </div>
+            <div class="col-md-3">
+                <h3>Our info</h3>
+                <p>226 Thompson St. New York, NY 10012 (btwn West 3rd St &amp; Bleecker St)</p>
+                <p>
+                    <a href="tel:+1212-677-8050">(212) 677-8050</a>
+                </p>
+                <p><a href="mailto:quihuynh1@gmail.com">quihuynh1@gmail.com</a></p>
             </div>
         </div>
     </footer>
