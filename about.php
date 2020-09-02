@@ -20,37 +20,7 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
 <body>
 
     <!-- Begin HEADER -->
-    <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">Quantum Leap</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://orders.9fold.me/quantum-leap.html" target="_blank">Order</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="jumbotron jumbotron-fluid hero">
-            <div class="container-fluid">
-                <h1 class="display-4">Quantum Leap</h1>
-            </div>
-        </div>
-    </header>
+    <?php include_once("./assets/inc/header.php") ?>
     <!-- End HEADER -->
 
     <!-- Begin MAIN -->
@@ -119,29 +89,9 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
     <!-- End Modal-->
     <!-- Subsequent modals are added through JS, i.e., appended to the div with 
     the class of modal-container-->
+
     <!-- Begin FOOTER -->
-    <footer class="jumbotron jumbotron-fluid mr-0 mb-0 pr-0">
-        <div class="container-fluid row justify-content-between p-0 m-0 mr-0 pr-0">
-            <div class="col-md-3">
-                <h3>Join our newsletter</h3>
-                <form class="form-group">
-                    <input type="email" name="newsletter" placeholder="Enter your email" required>
-                    <input type="submit" name="submit">
-                </form>
-            </div>
-            <div class="col-md-3">
-                <h3>Our Reviews</h3>
-            </div>
-            <div class="col-md-3">
-                <h3>Our info</h3>
-                <p>226 Thompson St. New York, NY 10012 (btwn West 3rd St &amp; Bleecker St)</p>
-                <p>
-                    <a href="tel:+1212-677-8050">(212) 677-8050</a>
-                </p>
-                <p><a href="mailto:quihuynh1@gmail.com">quihuynh1@gmail.com</a></p>
-            </div>
-        </div>
-    </footer>
+    <?php include_once("./assets/inc/footer.php"); ?>
     <!-- End FOOTER -->
     <script src="assets/js/script.js"></script>
 </body>
