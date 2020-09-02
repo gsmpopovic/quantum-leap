@@ -46,32 +46,32 @@ var noImgs = 16; // Number of images in img folder
 
 for (var i = 1; i < noImgs; i++) {
     modal_container.append(`<div class="modal fade" id="galleryModal${i}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header d-block">
-        <div class="d-flex">
-            <h3 class="modal-title" id="galleryModal${i}Label">Item ${i}</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <h6 class="modal-title">Item ${i} Description</h6>
-    </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-block">
+                    <div class="d-flex">
+                        <h3 class="modal-title" id="galleryModal${i}Label">Item ${i}</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <h6 class="modal-title">Item ${i} Description</h6>
+                </div>
             <div class="modal-body">
-            <img class="d-block w-100" src="./assets/img/img${i}.jpg">
+                <img class="d-block w-100" src="./assets/img/img${i}.jpg">
+            </div>
             </div>
         </div>
-    </div>
-</div>`);
+    </div>`);
     carousel.append(`<div class="carousel-item">
     <img class="d-block w-100" src="./assets/img/img${i}.jpg">
-        <div class="carousel-caption d-none d-md-block">
-            <h3>Item ${i}</h3>
-            <h4>Item ${i} description</h4>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal${i}">
+        <div class="carousel-caption">
+            <h4>Item ${i}</h4>
+\            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal${i}">
             Check it out!
             </button>
-        </div>`);
+        </div>
+    </div>`);
     indicators.append(`<li data-target="#carouselIndicators" data-slide-to="${i}"></li>`);
 
 }
