@@ -26,7 +26,7 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
     <!-- Begin MAIN -->
     <main class="container-fluid row mb-4">
         <?php require_once("messages.php")?>
-        <div class="col-md-6 align-content-center justify-content-center">
+        <div class="col-md-6 align-content-center">
             <form class="h-100" action="./messages.php" method="POST">
                 <div class="form-group"> 
                 <label for="usr">First name:</label>
@@ -44,7 +44,9 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
                 <label for="comment">Message:</label>
                 <textarea name="message" class="form-control"></textarea>
                 </div> 
+                <div class="form-group mx-auto">
                 <input type="submit" name="contact" class="btn btn-primary" value="Get in touch!">
+                </div> 
             </form>
         </div>
         <div class="col-md-6">

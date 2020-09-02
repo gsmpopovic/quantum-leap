@@ -3,8 +3,12 @@
             <div class="col-md-3">
                 <h3>Join our newsletter</h3>
                 <form>
-                    <input type="email" name="newsletter" placeholder="Enter your email" required>
-                    <input type="submit" name="submit">
+                    <div class="form-group">
+                        <input type="email" name="newsletter" placeholder="Enter your email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="news" class="btn btn-primary">
+                    </div>                 
                 </form>
             </div>
             <div class="col-md-3">
