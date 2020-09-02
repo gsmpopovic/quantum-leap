@@ -24,8 +24,8 @@
             </nav>
         </div>
         <div class="jumbotron jumbotron-fluid hero">
-            <div class="container-fluid">
-                <h1 class="display-4">Quantum Leap</h1>
+            <div class="container-fluid text-center overlay">
+                <h1 class="display-1">Quantum Leap</h1>
             </div>
         </div>
     </header>
