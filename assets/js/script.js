@@ -17,7 +17,7 @@ var carousel = $(".carousel-inner");
 // Access the container where modals will be stored 
 var modal_container = $(".modal-conatiner");
 
-// Append 16 images and their indicators to image carousel 
+// Append 15 images and their indicators to image carousel 
 
 // The images, ideally, would be set inside of an object which contains each image
 // and a description of it, e.g., 

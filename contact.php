@@ -26,16 +26,24 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
     <!-- Begin MAIN -->
     <main class="container-fluid row mb-4">
         <?php require_once("messages.php")?>
-        <div class="col-md-6 align-content-center">
-            <form class="form-group h-100" action="./messages.php" method="POST">
+        <div class="col-md-6 align-content-center justify-content-center">
+            <form class="h-100" action="./messages.php" method="POST">
+                <div class="form-group"> 
                 <label for="usr">First name:</label>
                 <input type="text" name="firstName" class="form-control" placeholder="Enter your first name." required>
-                <label for="usr">Last name:</label>
+                </div>
+                <div class="form-group">
+                <label for="usr">Last name:</label> 
                 <input type="text" name="lastName" class="form-control" placeholder="Enter your last name." required>
-                <label for="email">Email:</label>
+                </div> 
+                <div class="form-group"> 
+                <label for="email">Email:</label> 
                 <input type="email" name="email" class="form-control" placeholder="Enter your email." required>
+                </div>
+                <div class="form-group">
                 <label for="comment">Message:</label>
                 <textarea name="message" class="form-control"></textarea>
+                </div> 
                 <input type="submit" name="contact" class="btn btn-primary" value="Get in touch!">
             </form>
         </div>
