@@ -14,6 +14,8 @@ mobile_button.click(function() {
 var indicators = $(".carousel-indicators");
 // Access inside of carousel, where the actual images reside 
 var carousel = $(".carousel-inner");
+// Access the container where modals will be stored 
+var modal_container = $(".modal-conatiner");
 
 // Append 16 images and their indicators to image carousel 
 
@@ -43,11 +45,33 @@ var carousel = $(".carousel-inner");
 var noImgs = 16; // Number of images in img folder 
 
 for (var i = 1; i < noImgs; i++) {
-    indicators.append(`<li data-target="#carouselIndicators" data-slide-to="${i}"></li>`);
+    modal_container.append(`<div class="modal fade" id="galleryModal${i}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header d-block">
+        <div class="d-flex">
+            <h3 class="modal-title" id="galleryModal${i}Label">Item ${i}</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <h6 class="modal-title">Item ${i} Description</h6>
+    </div>
+            <div class="modal-body">
+            <img class="d-block w-100" src="./assets/img/img${i}.jpg">
+            </div>
+        </div>
+    </div>
+</div>`);
     carousel.append(`<div class="carousel-item">
-        <img class="d-block w-100" src="./assets/img/img${i}.jpg">
-            <div class="carousel-caption d-none d-md-block">
-                <h3>Item ${i}</h3>
-                <h4>Item ${i} description</h4>
-            </div>`);
+    <img class="d-block w-100" src="./assets/img/img${i}.jpg">
+        <div class="carousel-caption d-none d-md-block">
+            <h3>Item ${i}</h3>
+            <h4>Item ${i} description</h4>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal${i}">
+            Check it out!
+            </button>
+        </div>`);
+    indicators.append(`<li data-target="#carouselIndicators" data-slide-to="${i}"></li>`);
+
 }

@@ -73,6 +73,9 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Item 0</h4>
                                 <h4>Item 0 description</h4>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal">
+                                    Check it out!
+                                  </button>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -89,12 +92,37 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
     </main>
     <!-- End MAIN-->
 
+    <!-- Begin Modal -->
+    <!-- Modal -->
+    <div class="modal-conatiner">
+        <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-block">
+                        <div class="d-flex">
+                            <h3 class="modal-title" id="galleryModalLabel">Item 0</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <h6 class="modal-title">Item 0 Description</h6>
+                    </div>
+                    <div class="modal-body">
+                        <img class="d-block w-100" src="./assets/img/img.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal-->
+    <!-- Subsequent modals are added through JS, i.e., appended to the div with 
+    the class of modal-container-->
     <!-- Begin FOOTER -->
     <footer class="jumbotron jumbotron-fluid mr-0 mb-0 pr-0">
         <div class="container-fluid row justify-content-between p-0 m-0 mr-0 pr-0">
             <div class="col-md-3">
                 <h3>Join our newsletter</h3>
-                <form>
+                <form class="form-group">
                     <input type="email" name="newsletter" placeholder="Enter your email" required>
                     <input type="submit" name="submit">
                 </form>
