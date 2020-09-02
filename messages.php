@@ -6,7 +6,8 @@ function contact_us(){
     $username = "root";
     $password = "";
     $database = "quantumLeap";
-    $table="messages";
+    $table_messages="messages";
+    
     $connection = new mysqli($host, $username, $password, $database);
 
     if ($connection->connect_error) {
@@ -22,7 +23,7 @@ function contact_us(){
     $msg = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
         // MYSQL query
-        $sql="INSERT INTO $table(firstName, lastName, email, msg) 
+        $sql="INSERT INTO $table_messages(firstName, lastName, email, msg) 
         VALUES ('$firstName',
         '$lastName', 
         '$email',

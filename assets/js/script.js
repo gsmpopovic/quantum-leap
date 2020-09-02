@@ -42,7 +42,7 @@ var modal_container = $(".modal-conatiner");
 //             </div>`);
 
 
-var noImgs = 16; // Number of images in img folder 
+var noImgs = 15; // Number of images in img folder 
 
 for (var i = 1; i < noImgs; i++) {
     modal_container.append(`<div class="modal fade" id="galleryModal${i}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
