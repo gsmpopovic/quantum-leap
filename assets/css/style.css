@@ -1,55 +1,108 @@
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        html,
-        body {
-            min-height: 100%;
-            min-width: 100%;
-            height: 100vh;
-            width: 100vw;
-        }
-        
-        .hero {
-            color: whitesmoke;
-            background-image: url("../img/restaurant1.jpg");
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 50vh;
-        }
-        
-        .row {
-            padding-right: 0px;
-            margin-right: 0px;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Red Rose', cursive;
-        }
-        
-        p,
-        a,
-        i {
-            font-family: 'Raleway', sans-serif;
-            color: #333;
-            font-size: 1.2em;
-        }
-        
-        @media screen and (max-width:768px) {
-            .display-1 {
-                font-size: 4em;
-                /* This effectively makes it display-3. */
-            }
-            p,
-            a,
-            i {
-                font-size: 1.05em;
-            }
-        }
+/*
+Colour palette
+********
+Eclipse
+#2F2016
+
+Raw Sienna
+#CF7C3B
+
+Sushi
+#7EA32C
+
+Slate Gray
+#7C8691
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    min-height: 100%;
+    min-width: 100%;
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+.navbar,
+.footer {
+    border: 0;
+    background: #7EA32C !important;
+}
+
+.hero {
+    color: whitesmoke;
+    background-image: url("../img/restaurant1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    opacity: 0.8;
+}
+
+.row {
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Red Rose', cursive;
+}
+
+p,
+a,
+i {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.btn {
+    background: #CF7C3B !important;
+    border: none !important;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width:768px) {
+    .display-1 {
+        font-size: 4em;
+        /* This effectively makes it display-3. */
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    i {
+        text-align: center;
+    }
+    p,
+    a,
+    i {
+        font-size: 1.05em;
+    }
+}
+
+a:hover,
+i:hover,
+g:hover {
+    color: #CF7C3B !important;
+}
