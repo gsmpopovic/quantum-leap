@@ -33,9 +33,9 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
 
     <!-- Begin MAIN -->
     <main class="container-fluid row mb-4">
-        <?php require_once("messages.php")?>
+        <?php require_once("./assets/inc/messages.php")?>
         <div class="col-md-6 align-content-center">
-            <form class="h-100" action="./messages.php" method="POST">
+            <form class="h-100" action="./assets/inc/messages.php" method="POST">
                 <div class="form-group"> 
                 <label for="usr">First name:</label>
                 <input type="text" name="firstName" class="form-control" placeholder="Enter your first name." required>
