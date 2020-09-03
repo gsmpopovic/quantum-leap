@@ -2,20 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/332bfb5ae6.js" crossorigin="anonymous"></script>
-
+    
+    <!-- SEO --> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | Quantum Leap Vegetarian Restaurant | Official Website | Order Online Direct</title>
     <meta name="description" content="The Best Vegetarian Restaurant in downtown of Manhattan NYC. Order Online Direct! We are open since 1974. Order direct from our official website To receive discount.
-keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Online Direct">
+    keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Online Direct">
     <meta name="keywords" content="{keyword}">
+
+    <!-- Bootstrap CSS and custom CSS --> 
+    <link rel="stylesheet"href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- JjQuery, Bootstrap JS --> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src=./assets/js/bootstrap.min.js></script>
+    
+    <!-- Fonts, Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/332bfb5ae6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
