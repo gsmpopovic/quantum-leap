@@ -35,9 +35,9 @@
     <!-- End HEADER -->
 
     <!-- Begin MAIN -->
-    <main class="container-fluid row">
+    <main class="container-fluid">
 
-        <div class="row my-2">
+        <div class="row my-2 mx-auto">
             <div class='col-md-2'></div>
             <div class="col-md-8">
                 <h4>A short walk from Washington Square Park, Quantum Leap has been the local favorite of Greenwich Village's vegetarian residents for many years now. </h4>
@@ -45,19 +45,23 @@
             <div class='col-md-2'></div>
         </div>
 
-        <div class="row justify-content-around">
-            <div class="col-md-3">
-                <p>No matter what type of cuisine or diet you prefer, there are plenty of options for you. </p>
-            </div>
-            <div class="col-md-3">
-                <p>The courteous staff and laid-back atmosphere are perfect for a quick bite to eat or a long relaxing meal. Quantum Leap prides itself on providing affordable dining without sacrificing preparation or taste. </p>
-            </div>
-
-            <div class="col-md-3">
-                <p>We offer a number of lunch and dinner specials that will satisfy your hunger and leave you feeling great. Come see what makes Quantum Leap the signature place to find great vegetarian food in the village!</p>
-            </div>
+        <div class="row mx-auto">
+            <div class='col-md-2'></div>
+            <div class="col-md-8">
+                <div class="col w-100">
+                    <p>No matter what type of cuisine or diet you prefer, there are plenty of options for you. </p>
+                </div>
+                <div class="col w-100">
+                    <p>The courteous staff and laid-back atmosphere are perfect for a quick bite to eat or a long relaxing meal. Quantum Leap prides itself on providing affordable dining without sacrificing preparation or taste. </p>
+                </div>
+                <div class="col w-100">
+                    <p>We offer a number of lunch and dinner specials that will satisfy your hunger and leave you feeling great. Come see what makes Quantum Leap the signature place to find great vegetarian food in the village!</p>
+                </div>   
+            <div class='col-md-2'></div>
         </div>
-        <div class="row my-2">
+        <div class='col-md-2'></div>
+        </div>
+        <div class="row my-2 mx-auto">
             <div class='col-md-2'></div>
             <div class="col-md-8">
                 <h4>Come see what makes Quantum Leap the signature place to find great vegetarian food in the village!</h4>

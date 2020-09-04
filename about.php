@@ -35,7 +35,7 @@
     <!-- End HEADER -->
 
     <!-- Begin MAIN -->
-    <main class="container-fluid row mb-4">
+    <main class="container-fluid row mb-4 mx-auto">
         <div class="col-md-3">
             <h4>Serving up vegetarian & vegan meals for over a decade,</h4>
             <p>Quantum Leap serves different cuisines and styles to fit anyone's cravings.</p>

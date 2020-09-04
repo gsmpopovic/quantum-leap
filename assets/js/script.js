@@ -5,10 +5,11 @@ var nav = $(".collapse");
 
 // Access the button that will display for nav on mobile and tablet
 mobile_button.click(function() {
-        // toggle the display of this nav's elements when this button is clicked 
-        nav.toggle();
-    })
-    // -------------------------------------------------------------------------
+    // toggle the display of this nav's elements when this button is clicked 
+    nav.toggle();
+})
+
+// -------------------------------------------------------------------------
 
 // Access image carousel indicators
 var indicators = $(".carousel-indicators");
