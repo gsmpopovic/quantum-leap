@@ -2,12 +2,14 @@
 
 function messagesJSON(){
 
+    // Create a class that will store the user's answers to form fields, 
+    // and use its properties to populate a JSON file
 
     class Customer {
         private $firstName="";
         private $lastName=""; 
         private $email="";
-        private $msg=""; 
+        private $message=""; 
         
         // Set the properties of the instance to customer's answers
         // in the form 
@@ -17,7 +19,7 @@ function messagesJSON(){
             $this->firstName=filter_var($_POST['firstName'], FILTER_SANITIZE_STRING);
             $this->lastName=filter_var($_POST['lastName'], FILTER_SANITIZE_STRING);
             $this->email=filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-            $this->msg=filter_var($_POST['msg'], FILTER_SANITIZE_STRING);
+            $this->message=filter_var($_POST['msg'], FILTER_SANITIZE_STRING);
             
         }
 
@@ -33,8 +35,8 @@ function messagesJSON(){
                 return $this->email; 
             }
         
-        public function getMsg(){
-            return $this->msg; 
+        public function getMessage(){
+            return $this->message; 
         }
     }
 
@@ -43,12 +45,14 @@ function messagesJSON(){
 
         // Create PHP associative array 
 
-        $array = array(
-            'firstName' => $Customer->getfirstName(),
-            "lastName" => $Customer->getLastName(),
-            "email" => $Customer->getEmail(), 
-            "message" => $Customer->getMsg()
-        );
+        $array =  array(
+                'firstName' => $Customer->getfirstName(),
+                "lastName" => $Customer->getLastName(),
+                "email" => $Customer->getEmail(), 
+                "message" => $Customer->getMessage()
+            );
+        
+        
 
         // Create json 
 
@@ -56,15 +60,27 @@ function messagesJSON(){
 
         print_r($json);
 
-        // Create a json file to store data
+        // Create a json file to store data if file doesn't already exist
+        // OR
+        // Append json to already existing file
 
-        file_put_contents("messages.json", $json); 
+        if (!file_exists("./messages.json")){
+
+            file_put_contents("messages.json", $json);
+
+        }
+
+        else{
+
+            file_put_contents("./messages.json", $json, FILE_APPEND);
+        }
         
         header("location: ../../contact.php");
 
     }
 
     if (isset($_POST['contact'])){
+
         messagesJSON();
         // header("location: ../../contact.php");
     }
