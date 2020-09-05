@@ -17,10 +17,10 @@ function contact_us(){
 
     //Form inputs with sanitization 
 
-    $firstName = filter_var($_POST['firstName'], FILTER_SANITIZE_STRING);
-    $lastName = filter_var($_POST['lastName'], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-    $msg = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+    $firstName = filter_var($_POST["firstName"], FILTER_SANITIZE_STRING);
+    $lastName = filter_var($_POST["lastName"], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_STRING);
+    $msg = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
         // MYSQL query
         $query="INSERT INTO $table(firstName, lastName, email, msg) 
