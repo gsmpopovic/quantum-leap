@@ -2,9 +2,9 @@
         <div class="container-fluid">
             <div class="row justify-content-between">
                     <div class="col-md-3 text-center">
-                        <?php require_once("./assets/inc/newsletter.php")?>
+                        <?php require_once("./assets/inc/newsletter_json.php")?>
                         <h3>Join our newsletter</h3>
-                        <form action="./assets/inc/newsletter.php" method="POST">
+                        <form action="./assets/inc/newsletter_json.php" method="POST">
                             <div class="form-group">
                                 <input type="email" name="newsletter" placeholder="Enter your email." class="form-control" required>
                             </div>

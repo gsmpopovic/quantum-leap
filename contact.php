@@ -33,9 +33,9 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
 
     <!-- Begin MAIN -->
     <main class="container-fluid row mb-4">
-        <?php require_once("./assets/inc/messages.php")?>
+        <?php require_once("./assets/inc/message_json.php")?>
         <div class="col-md-6 align-content-center">
-            <form class="h-100" action="./assets/inc/messages.php" method="POST">
+            <form class="h-100" action="./assets/inc/message_json.php" method="POST">
                 <div class="form-group"> 
                 <label for="usr">First name:</label>
                 <input type="text" name="firstName" class="form-control" placeholder="Enter your first name." required>
@@ -50,7 +50,7 @@ keyword = Vegetarian Restaurant, Restaurant in downtown Manhattan NYC, Order Onl
                 </div>
                 <div class="form-group">
                 <label for="comment">Message:</label>
-                <textarea name="message" class="form-control"></textarea>
+                <textarea name="msg" class="form-control"></textarea>
                 </div> 
                 <div class="form-group mx-auto">
                 <input type="submit" name="contact" class="btn btn-primary" value="Get in touch!">
