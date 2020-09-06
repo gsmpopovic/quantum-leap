@@ -46,36 +46,57 @@ function messagesJSON(){
         // Create PHP associative array 
 
         $array =  array(
-                'firstName' => $Customer->getfirstName(),
+                "firstName" => $Customer->getfirstName(),
                 "lastName" => $Customer->getLastName(),
                 "email" => $Customer->getEmail(), 
                 "message" => $Customer->getMessage()
             );
-        
-        
-
-        // Create json 
-
-        $json = json_encode($array); 
-
-        print_r($json);
 
         // Create a json file to store data if file doesn't already exist
         // OR
         // Append json to already existing file
 
-        if (!file_exists("./messages.json")){
+        if (!file_exists('messages.json')){
 
-            file_put_contents("messages.json", $json);
+            // Create an array to store json objects if one doesn't exist 
+
+            $json_array = array(); 
+
+            // Add to that array 
+
+            array_push($json_array, $array); 
+            // Store it in a file 
+
+            $json_array=json_encode($json_array);
+
+            file_put_contents('messages.json', $json_array);
 
         }
 
         else{
+            // If one does exist, grab it
 
-            file_put_contents("./messages.json", $json, FILE_APPEND);
+            $json_array=file_get_contents('messages.json');
+
+            // Decode from JSON to PHP formatting 
+
+            $json_array=json_decode($json_array);
+
+            // Add to the container array 
+
+            array_push($json_array, $array); 
+
+            // Encode the array with appended data 
+
+            $json_array=json_encode($json_array, true);
+
+            // Write to file 
+
+            file_put_contents("messages.json", $json_array);
         }
         
-        header("location: ../../contact.php");
+        // Redirect user to contact page 
+       header("location: ../../contact.php");
 
     }
 

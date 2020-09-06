@@ -47,24 +47,52 @@ function newsletterJSON(){
         // OR
         // Append json to already existing file
 
-        if (!file_exists("./newsletter.json")){
+        if (!file_exists('newsletter.json')){
 
-            file_put_contents("newsletter.json", $json);
+            // Create an array to store json objects if one doesn't exist 
+
+            $json_array = array(); 
+
+            // Add to that array 
+
+            array_push($json_array, $array); 
+            // Store it in a file 
+
+            $json_array=json_encode($json_array);
+
+            file_put_contents('newsletter.json', $json_array);
 
         }
 
         else{
+            // If one does exist, grab it
 
-            file_put_contents("./newsletter.json", $json, FILE_APPEND);
+            $json_array=file_get_contents('newsletter.json');
+
+            // Decode from JSON to PHP formatting 
+
+            $json_array=json_decode($json_array);
+
+            // Add to the container array 
+
+            array_push($json_array, $array); 
+
+            // Encode the array with appended data 
+
+            $json_array=json_encode($json_array, true);
+
+            // Write to file 
+
+            file_put_contents("newsletter.json", $json_array);
         }
-         
-        header("location: ../../index.php");
+        
+        // Redirect user to contact page 
+       header("location: ../../index.php");
 
     }
 
     if (isset($_POST['newsletter'])){
 
         newsletterJSON();
-
+        // header("location: ../../contact.php");
     }
-?>
